@@ -69,8 +69,7 @@ jobs:
         working-directory: ./scanner
         run: |
           echo "Running sbomber prepare..."
-          ./sbomber prepare \
-            --manifest sbom_manifest.yaml
+          ./sbomber prepare ../sbom_manifest.yaml
           echo "Artifacts prepared; state saved in ./.statefile.yaml"
 
       - name: Submit SBOMs for scanning
