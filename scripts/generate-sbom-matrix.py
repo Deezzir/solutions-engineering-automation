@@ -99,10 +99,10 @@ def handle_snap(name: str, risk: str, cycle: str, arch: str) -> dict:
     return {
         "name": name,
         "type": "snap",
-        "version": revision,
+        "version": f"'{revision}'",
         "ssdlc_params": {
             "name": name,
-            "version": revision,
+            "version": f"'{revision}'",
             "channel": risk,
             "cycle": cycle,
         },
@@ -148,10 +148,10 @@ def handle_charm(name: str, risk: str, cycle: str, arch: str) -> dict:
     return {
         "name": name,
         "type": "charm",
-        "version": revision,
+        "version": f"'{revision}'",
         "ssdlc_params": {
             "name": name,
-            "version": revision,
+            "version": f"'{revision}'",
             "channel": risk,
             "cycle": cycle,
         },
